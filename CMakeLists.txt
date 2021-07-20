@@ -1,0 +1,7 @@
+project(vopencl)
+set(C ../common)
+set(COMMON ${C}/alloc.c ${C}/api.c ${C}/aux.c ${C}/block.c ${C}/lock.c ${C}/map.c ${C}/net.c ${C}/rb.c ${C}/rpc_client.c ${C}/rpc_server.c ${C}/set.c ${C}/stream.c)
+include_directories(include)
+add_subdirectory(provider)
+add_subdirectory(consumer)
+add_subdirectory(agent)

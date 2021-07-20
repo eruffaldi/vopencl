@@ -1,0 +1,22 @@
+usrsctp
+
+missing:
+-sctp_peeloff
+-SCTP_EVENTS
+-SCTP_DELAYED_ACK_TIME
+-sctp_sendmsg
+-sctp_recvmsg
+
+renamed:
+-sndrcvinfo to rcvinfo
+	but sinfo_assoc_id missing
+	but sinfo_stream could be rcv_sid
+
+status
+	agend blocks buildimng
+	consumer builds but needs clara and main
+
+
+key SCTP user space changes:
+	clara
+	common/net.c
